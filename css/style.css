@@ -23,6 +23,7 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    border: 1px solid #c8c8c8;
 }
 
 #app-body {
@@ -34,6 +35,12 @@ img {
     flex-basis: 20%;
     background-color: #efefef;
     height: 95vh;
+}
+
+.cat-selected {
+    background-color: rgb(50, 64, 189);
+    color: #fff;
+    font-weight: 600;
 }
 .list-of-cats {
     list-style: none;
@@ -49,6 +56,7 @@ img {
 .cat-item:hover {
     background-color: #fff;
     cursor: pointer;
+    color: #000;
 }
 
 .cat-list h2 {
