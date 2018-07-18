@@ -79,6 +79,7 @@ const catView = function() {
 
     const init = () => {
         catEntry.addEventListener("click", octopus.clickCounter);
+        render();
     }
 
     const render = (cat) => {
@@ -104,6 +105,7 @@ const octopus = function() {
 
     const init = () => {
         model.cats.sort((a,b) => a.name > b.name );
+        selectCat(model.cats[0].name);
         listView.render(model.cats);
         catView.init();
     }
