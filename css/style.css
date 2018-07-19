@@ -67,9 +67,9 @@ img {
     flex-basis: 95vh;
 }
 
-.cat-container {
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 40px;
 }
 

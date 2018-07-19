@@ -18,10 +18,27 @@
         </aside>
         <main class="cat-display">
             <h1>Premium Cat Clicker</h1>
-            <div id="cat-clicker" class="cat-container">
+            <div id="cat-clicker" class="container">
                 <!-- cat photos will display here -->
                 <div class="cat-entry"></div>
-            </div> <!-- .cat-view -->
+            </div> <!-- .container -->
+            <div class="admin-section container">
+                <button class="btn admin-btn">Admin</button>
+                <form class="admin-form">
+                    <div class="form-input">
+                        <label for="cat-name">Name</label>
+                        <input type="text" name="cat-name" value="" />
+                    </div> <!-- .form-input -->
+                    <div class="form-input">
+                        <label for="cat-img">Image</label>
+                        <input type="text" name="cat-img" value="" />
+                    </div><!-- .form-input -->
+                    <div class="form-input">
+                        <label for="click-count">Clicks</label>
+                        <input type="number" name="click-count" value="" />
+                    </div><!-- .form-input -->
+                </form> <!-- .admin-form -->
+            </div> <!-- .admin-section -->
         </main>
     </section> <!-- #body -->
 
