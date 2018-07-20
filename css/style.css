@@ -38,7 +38,7 @@ img {
 }
 
 .cat-selected {
-    background-color: rgb(50, 64, 189);
+    background-color: #3240bd;
     color: #fff;
     font-weight: 600;
 }
@@ -70,7 +70,10 @@ img {
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 40px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .cat-entry { 
@@ -83,6 +86,83 @@ img {
     -webkit-box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
     -moz-box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
     box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-header.display {
+    justify-content: space-between;
+}
+
+.admin-header h3 {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-bottom: none;
+    background: #bebebe;
+    font-size: 1.25rem;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.admin-btn {
+    background:  #3240bd;
+}
+
+.admin-btn:active {
+    background:  #838fff;
+}
+
+.admin-form {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.admin {
+    display: none;
+}
+
+.form-input {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.form-btns {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn {
+    background: red;
+}
+
+.submit-btn {
+    background: green;
+}
+
+
+label {
+    flex-basis: 30%;
+    font-size: 1.25rem;
+    padding-top: 5px;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    margin: 3px 0;
+    flex-basis: 70%;
+    font-size: 1.25rem;
 }
 
 footer {

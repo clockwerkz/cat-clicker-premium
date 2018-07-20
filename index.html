@@ -17,26 +17,38 @@
             </ul> <!-- list-of-names -->
         </aside>
         <main class="cat-display">
-            <h1>Premium Cat Clicker</h1>
+            
             <div id="cat-clicker" class="container">
+                <h1>Premium Cat Clicker</h1>
                 <!-- cat photos will display here -->
                 <div class="cat-entry"></div>
             </div> <!-- .container -->
             <div class="admin-section container">
-                <button class="btn admin-btn">Admin</button>
-                <form class="admin-form">
+                <div class="admin-header">
+                        <h3 class="admin">Edit Cat Info</h3>
+                        <button class="btn admin-btn">Admin</button>
+                </div>
+                <form class="admin admin-form" id="admin-form">
                     <div class="form-input">
                         <label for="cat-name">Name</label>
-                        <input type="text" name="cat-name" value="" />
+                        <input type="text" name="cat-name" value="" id="cat-name"/>
                     </div> <!-- .form-input -->
                     <div class="form-input">
                         <label for="cat-img">Image</label>
-                        <input type="text" name="cat-img" value="" />
+                        <input type="text" name="cat-img" value="" id="cat-img"/>
+                    </div><!-- .form-input -->
+                    <div class="form-input">
+                        <label for="cat-alt-text">Alt Text</label>
+                        <input type="text" name="cat-alt-text" value="" id="cat-alt-text"/>
                     </div><!-- .form-input -->
                     <div class="form-input">
                         <label for="click-count">Clicks</label>
-                        <input type="number" name="click-count" value="" />
+                        <input type="number" name="click-count" value="" id="cat-click-count"/>
                     </div><!-- .form-input -->
+                    <div class="form-btns">
+                        <button class="btn cancel-btn">Cancel</button>
+                        <button class="btn submit-btn" form="admin-form" value="Submit">Ok</button>
+                    </div> <!-- .form-btns -->
                 </form> <!-- .admin-form -->
             </div> <!-- .admin-section -->
         </main>
